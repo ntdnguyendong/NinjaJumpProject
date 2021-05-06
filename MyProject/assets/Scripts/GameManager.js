@@ -17,10 +17,10 @@ cc.Class({
     
     update (dt) {
         this._timer += dt;
-        if(this._timer >= 3){
+        if(this._timer >= 1){
             var pillar = cc.instantiate(this.prefab);
-            pillar.parent = cc.director.getScene();
-            pillar.setPosition(3000,960);
+            pillar.parent = this.node;
+            pillar.setPosition(this.node.x + 1000,this.node.y);
             this._timer = 0;
         }
     },

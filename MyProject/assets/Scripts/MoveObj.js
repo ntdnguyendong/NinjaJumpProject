@@ -15,15 +15,12 @@ cc.Class({
     },
 
     update (dt) {
-        if(this.node.x > -300){
+        if(this.node.x > -1000){
             this.node.setPosition(cc.v2(this.node.x - 10, this.node.y));
+        }else{
+            this.node.destroy();
         }
-        cc.log(this.node.position)
-        cc.log(this.sprite.position)
-        // if(this.node.position === this.sprite.position){
-        //     cc.log("a")
-        //     this.node.destroy();
-        // }
+        
     },
    
 });

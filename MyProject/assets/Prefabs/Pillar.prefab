@@ -13,12 +13,12 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Pillar",
+    "_name": "pillar",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 1,
+    "_level": 3,
     "_components": [
       {
         "__id__": 2
@@ -40,8 +40,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 311,
-      "height": 2210
+      "width": 77,
+      "height": 905
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -50,8 +50,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 1372.258,
-      "y": 901.861,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -74,7 +74,7 @@
   },
   {
     "__type__": "cc.Sprite",
-    "_name": "Pillar<Sprite>",
+    "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
@@ -122,9 +122,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "5b851855-226e-4857-b470-78f5f4fda084"
+      "__id__": 0
     },
-    "fileId": "c6zGCBg0RFh786o7aFzGvQ",
+    "fileId": "91zEbgfjNLhos5B3mMX/l6",
     "sync": false
   }
 ]
