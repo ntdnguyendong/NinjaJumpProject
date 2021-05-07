@@ -24,8 +24,9 @@ cc.Class({
             case cc.macro.KEY.space:
                 if(this.jump == 0){
                 this.node.getComponent(cc.Animation).play("Jump");
-                this.node.setPosition(cc.v2(this.node.x, this.node.y += 150));
-                this.node.getComponent(cc.RigidBody).applyForceToCenter(new cc.Vec2(0,100000),true);              
+                // this.node.setPosition(cc.v2(this.node.x, this.node.y +));
+                // this.node.getComponent(cc.RigidBody).applyForceToCenter(new cc.Vec2(0,1000),true);  
+                this.node.getComponent(cc.RigidBody).applyForceToCenter(new cc.Vec2(0,10000),this.node.x);            
                 this.jump = 0;
                 console.log("jump");
                 }
