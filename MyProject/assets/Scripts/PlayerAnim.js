@@ -38,13 +38,12 @@ cc.Class({
     },
 
     checkLanding() {
-        cc.log(this._rigidBody.linearVelocity.y)
         if(this._jumpCount >= 1){
         if(this._rigidBody.linearVelocity.y === 0){
             this._jumpCount = 0;
             this._anim.play("RunAnim");
+            }
         }
-    }
     },
 
     update() {

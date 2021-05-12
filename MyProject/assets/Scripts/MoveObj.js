@@ -2,8 +2,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        sprite : cc.Sprite,
-        _timer : 0,
         speed : 2,
     },
 
@@ -21,7 +19,5 @@ cc.Class({
         }else{
             this.node.destroy();
         }
-        
     },
-   
 });

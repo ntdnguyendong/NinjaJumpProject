@@ -5,6 +5,7 @@ cc.Class({
     properties: {
         groundTop : cc.Prefab,
         groundBottom : cc.Prefab,
+        // prefab : cc.Prefab,
         _timer : 0,
     },
 
@@ -31,5 +32,13 @@ cc.Class({
         groundBottom.parent = this.node;
         groundTop.setPosition(this.node.x + 500, this.node.y + 350);
         groundBottom.setPosition(this.node.x + 500, this.node.y - 300);
+        // let prefab = cc.instantiate(this.prefab);
+        // prefab.parent = this.node;
+        // prefab.setPosition(this.node.x, this.node.y);
+        // cc.log(prefab.position);
+    },
+
+    getRandom(min, max) {
+        return Math.random() * (max - min) + min;
     }
 });
