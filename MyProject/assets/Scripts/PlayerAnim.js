@@ -2,16 +2,18 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        jumpPosition: 0,
-        velocity: 0,
-        jumpCount : 0,
+        _jumpCount : 0,
+        _anim : null,
+        _rigidBody : null,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
-        this.node.getComponent(cc.RigidBody).gravityScale = 1;
-        this.node.getComponent(cc.Animation).play("RunAnim");
+        this._anim = this.node.getComponent(cc.Animation);
+        this._rigidBody = this.node.getComponent(cc.RigidBody);
+        this._rigidBody.gravityScale = 4;
+        this._anim.play("RunAnim");
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.jumpPlayer, this);
     },
 
@@ -22,23 +24,30 @@ cc.Class({
     jumpPlayer(event) {
         switch (event.keyCode) {
             case cc.macro.KEY.space:
-                if(this.jumpCount == 0) {
-                    this.node.getComponent(cc.Animation).play("Jump");
-                    this.node.getComponent(cc.RigidBody).linearVelocity = (new cc.Vec2(0, this.velocity + 300));
-                    this.jumpCount ++;
-                    cc.log(this.jumpCount);
-                    cc.log(this.node.getComponent(cc.RigidBody))
-                } else if(this.jumpCount == 1){
-                    this.node.getComponent(cc.Animation).play("Jump");
-                    this.node.getComponent(cc.RigidBody).linearVelocity = (new cc.Vec2(0, this.velocity + 300));
-                    this.jumpCount ++;
-                    cc.log(this.jumpCount);
+                if(this._jumpCount == 0) {
+                    this._anim.play("Jump");
+                    this._rigidBody.linearVelocity = new cc.Vec2(0, 500);
+                    this._jumpCount ++;
+                } else if(this._jumpCount == 1){
+                    this._anim.play("Jump");
+                    this._rigidBody.linearVelocity = new cc.Vec2(0, 500);
+                    this._jumpCount ++;
                 }
                 break;
         }
     },
 
     checkLanding() {
-        
+        cc.log(this._rigidBody.linearVelocity.y)
+        if(this._jumpCount >= 1){
+        if(this._rigidBody.linearVelocity.y === 0){
+            this._jumpCount = 0;
+            this._anim.play("RunAnim");
+        }
     }
+    },
+
+    update() {
+        this.checkLanding();
+    },
 });
