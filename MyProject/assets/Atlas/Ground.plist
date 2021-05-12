@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>Tile (1).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,188},{128,128}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{128,128}}</string>
+				<key>sourceSize</key>
+				<string>{128,128}</string>
+			</dict>
+
+			<key>Tile (14).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{129,129},{128,93}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{128,93}}</string>
+				<key>sourceSize</key>
+				<string>{128,128}</string>
+			</dict>
+
+			<key>Tile (15).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,94},{128,93}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{128,93}}</string>
+				<key>sourceSize</key>
+				<string>{128,128}</string>
+			</dict>
+
+			<key>Tile (16).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{128,93}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{128,93}}</string>
+				<key>sourceSize</key>
+				<string>{128,128}</string>
+			</dict>
+
+			<key>Tile (2).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{129,0},{128,128}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{128,128}}</string>
+				<key>sourceSize</key>
+				<string>{128,128}</string>
+			</dict>
+
+			<key>Tile (3).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,317},{128,128}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{128,128}}</string>
+				<key>sourceSize</key>
+				<string>{128,128}</string>
+			</dict>
+
+		</dict>
+
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>size</key>
+			<string>{512,512}</string>
+			<key>textureFileName</key>
+			<string>Ground.png</string>
+			</dict>
+		</dict>
+</plist>
