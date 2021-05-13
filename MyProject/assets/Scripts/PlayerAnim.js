@@ -26,11 +26,11 @@ cc.Class({
             case cc.macro.KEY.space:
                 if (this._jumpCount == 0) {
                     this._anim.play("Jump");
-                    this._rigidBody.linearVelocity = new cc.Vec2(0, 500);
+                    this._rigidBody.linearVelocity = new cc.Vec2(0, 650);
                     this._jumpCount++;
                 } else if (this._jumpCount == 1) {
                     this._anim.play("Jump");
-                    this._rigidBody.linearVelocity = new cc.Vec2(0, 500);
+                    this._rigidBody.linearVelocity = new cc.Vec2(0, 650);
                     this._jumpCount++;
                 }
                 break;
@@ -44,6 +44,12 @@ cc.Class({
                 this._anim.play("RunAnim");
             }
         }
+    },
+
+    onBeginContact : function (contact, selfCollider, otherCollider){
+       if(contact.colliderB.tag === 1){
+           this.node.destroy();
+       }
     },
 
     update() {
