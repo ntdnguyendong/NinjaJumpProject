@@ -10,6 +10,6 @@ cc.Class({
         let collision_manager = cc.director.getCollisionManager();
         physics_manager.enabled = true;
         collision_manager.enabled = true;
-
+        collision_manager.enabledDebugDraw = false;
     },
 });

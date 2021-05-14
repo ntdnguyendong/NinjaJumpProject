@@ -35,10 +35,13 @@
       },
       {
         "__id__": 10
+      },
+      {
+        "__id__": 11
       }
     ],
     "_prefab": {
-      "__id__": 11
+      "__id__": 12
     },
     "_opacity": 255,
     "_color": {
@@ -79,7 +82,7 @@
     "_skewX": 0,
     "_skewY": 0,
     "_is3DNode": false,
-    "groupIndex": 0,
+    "groupIndex": 2,
     "_id": ""
   },
   {
@@ -300,7 +303,6 @@
       "__id__": 1
     },
     "_enabled": true,
-    "speed": 3,
     "_id": ""
   },
   {
@@ -336,7 +338,7 @@
       "__id__": 1
     },
     "_enabled": true,
-    "tag": 0,
+    "tag": 2,
     "_density": 1,
     "_sensor": false,
     "_friction": 0.2,
@@ -344,13 +346,34 @@
     "body": null,
     "_offset": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": -349
+      "x": -0.6,
+      "y": -347.6
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 391,
-      "height": 691
+      "width": 392.3,
+      "height": 693.8
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "cc.BoxCollider",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "tag": 0,
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": -149,
+      "y": -351.2
+    },
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 100,
+      "height": 685.5
     },
     "_id": ""
   },
