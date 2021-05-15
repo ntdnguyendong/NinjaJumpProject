@@ -9,11 +9,18 @@
     [
       true,
       false,
+      true,
       true
     ],
     [
       true,
       true,
+      false
+    ],
+    [
+      false,
+      true,
+      false,
       false
     ]
   ],
@@ -35,7 +42,8 @@
   "group-list": [
     "default",
     "MainChar",
-    "PillarBottom"
+    "PillarBottom",
+    "EndWorld"
   ],
   "last-module-event-record-time": 0,
   "simulator-orientation": false,
@@ -44,6 +52,5 @@
     "width": 960
   },
   "use-customize-simulator": true,
-  "use-project-simulator-setting": false,
-  "start-scene": "current"
+  "use-project-simulator-setting": false
 }
