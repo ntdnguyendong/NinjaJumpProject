@@ -8,13 +8,13 @@ cc.Class({
         btnPlay: cc.Button,
         menuLayout: cc.Node,
         gameLayout: cc.Node,
-        gameOverLayour: cc.Node,
+        gameOverLayout: cc.Node,
     },
 
     onLoad() {
         this.menuLayout.active = true;
         this.gameLayout.active = false;
-        this.gameOverLayour.active = false;
+        this.gameOverLayout.active = false;
     },
 
     start() {
@@ -33,8 +33,14 @@ cc.Class({
     gameOver() {
         if (this.gameLayout.active == true) {
             if (_singleTon._instance.flag == true) {
-                this.gameOverLayour.active = true;
+                this.gameOverLayout.active = true;
             }
         }
+    },
+
+    returnHome() {
+        _singleTon._instance.flag = false;
+        let scene = cc.director.getScene(this.Scene);
+        cc.director.loadScene(scene.name)
     }
 });

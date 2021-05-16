@@ -30,10 +30,8 @@ cc.Class({
     checkScore(){
         this.curScore.string = _singleTon._instance.score;
         let newScore = parseInt(this.curScore.string);
-        cc.log(newScore);
         if(newScore > this._bestScore){
             cc.sys.localStorage.setItem('bestScore', JSON.stringify(newScore));
-            cc.log(this._bestScore + "dcm");
             this.bestScore.string = newScore;
         }
     }

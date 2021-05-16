@@ -50,11 +50,9 @@ cc.Class({
     },
 
     onCollisionEnter(other, self) {
-        cc.log(other.node.group)
         if (other.node.group === "PillarBottom" || other.node.group === "EndWorld") {
             this.tweenDie();
             this._anim.play("Die");
-            cc.log(this._physicCollider)
             this._physicCollider.active = false;
             _singleTon._instance.flag = true;
             this._isAlive = false;
