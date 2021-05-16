@@ -10,6 +10,7 @@
       true,
       false,
       true,
+      true,
       true
     ],
     [
@@ -20,6 +21,13 @@
     [
       false,
       true,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      false,
       false,
       false
     ]
@@ -43,7 +51,8 @@
     "default",
     "MainChar",
     "PillarBottom",
-    "EndWorld"
+    "EndWorld",
+    "CheckScore"
   ],
   "last-module-event-record-time": 0,
   "simulator-orientation": false,

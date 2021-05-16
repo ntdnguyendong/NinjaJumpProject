@@ -458,7 +458,7 @@
         "__id__": 20
       },
       {
-        "__id__": 27
+        "__id__": 28
       },
       {
         "__id__": 29
@@ -879,8 +879,9 @@
       "__uuid__": "f3addb89-49de-4243-b8fb-3ed3cb7940c2"
     },
     "pillarBottom": {
-      "__uuid__": "4111d518-8901-4ab9-af0e-f74efaae23b4"
+      "__uuid__": "3607bf41-bf55-4530-a4f3-78652252a481"
     },
+    "_checkFlag": true,
     "_timer": 0,
     "_id": "d7Ow/1TCdPv5mkP5dr7KSO"
   },
@@ -1060,7 +1061,7 @@
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 22.2,
+      "width": 16.9,
       "height": 25.4
     },
     "_id": "01J6IUF4ZBmY2BeSEHSEuO"
@@ -1094,12 +1095,49 @@
       "__id__": 20
     },
     "_enabled": true,
+    "labelScore": {
+      "__id__": 27
+    },
     "_jumpCount": 0,
     "_isJump": false,
     "_isAlive": true,
+    "_score": 0,
     "_anim": null,
     "_rigidBody": null,
+    "_physicCollider": null,
     "_id": "59zwImTrJMeJz6C7k52tIU"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 28
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "0",
+    "_N$string": "0",
+    "_fontSize": 70,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "e3205461-d515-40f6-ac03-7c78122af573"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 1,
+    "_N$cacheMode": 0,
+    "_id": "a66qnfv2tHSrrGWhluDHSE"
   },
   {
     "__type__": "cc.Node",
@@ -1113,7 +1151,7 @@
     "_level": 4,
     "_components": [
       {
-        "__id__": 28
+        "__id__": 27
       }
     ],
     "_prefab": null,
@@ -1158,38 +1196,6 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "_id": "c7bVDpQyBEY4hhTokcFKL1"
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 27
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_useOriginalSize": false,
-    "_string": "0",
-    "_N$string": "0",
-    "_fontSize": 70,
-    "_lineHeight": 40,
-    "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "e3205461-d515-40f6-ac03-7c78122af573"
-    },
-    "_isSystemFontUsed": false,
-    "_spacingX": 0,
-    "_batchAsBitmap": false,
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 1,
-    "_N$cacheMode": 0,
-    "_id": "a66qnfv2tHSrrGWhluDHSE"
   },
   {
     "__type__": "cc.Node",
