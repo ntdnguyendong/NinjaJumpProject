@@ -1,4 +1,4 @@
-var _singleTon = require('GameManager');
+var _singleTon = require('SingleTon');
 
 cc.Class({
   extends: cc.Component,
@@ -25,6 +25,8 @@ cc.Class({
     _checkFlag : true,
     _timer: 0,
   },
+
+  onLoad(){},
 
   start() {
     this.createPillar();

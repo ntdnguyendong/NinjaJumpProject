@@ -1,4 +1,4 @@
-var _singleTon = require('GameManager');
+var _singleTon = require('SingleTon');
 
 cc.Class({
     extends: cc.Component,

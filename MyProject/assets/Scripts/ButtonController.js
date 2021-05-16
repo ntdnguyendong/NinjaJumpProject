@@ -1,3 +1,4 @@
+const Emitter = require('Emitter');
 
 cc.Class({
     extends: cc.Component,
@@ -11,6 +12,10 @@ cc.Class({
     start () {
 
     },
+
+    playGameBtn(){
+        Emitter.instance.emit('Play_Game');
+    }
 
     // update (dt) {},
 });

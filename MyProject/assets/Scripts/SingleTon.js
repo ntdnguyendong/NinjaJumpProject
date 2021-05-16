@@ -48,7 +48,7 @@
 
 //  });
 
-var GameManager = cc.Class({
+var SingleTon = cc.Class({
     statics : {_instance : null},
     age : 0,
     flag : null,
@@ -59,5 +59,5 @@ var GameManager = cc.Class({
 
 });
 
-GameManager._instance = new GameManager();
-module.exports = GameManager;
+SingleTon._instance = new SingleTon();
+module.exports = SingleTon;
