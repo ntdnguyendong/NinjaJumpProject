@@ -50,11 +50,11 @@
 
 var SingleTon = cc.Class({
     statics : {_instance : null},
-    age : 0,
     flag : null,
+    score : null,
     ctor(){
-        this.age = 20;
         this.flag = false;
+        this.score = 0;
     }
 
 });

@@ -61,8 +61,8 @@ cc.Class({
             this._isJump = true;
         }
         if(other.node.group === "CheckScore" && this._isAlive == true){
-            this._score++;
-            this.labelScore.string = this._score;
+            _singleTon._instance.score ++;
+            this.labelScore.string = _singleTon._instance.score;
         }
     },
 

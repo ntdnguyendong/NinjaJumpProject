@@ -69,10 +69,10 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 73
+        "__id__": 74
       },
       {
-        "__id__": 74
+        "__id__": 75
       }
     ],
     "_prefab": null,
@@ -242,7 +242,7 @@
     "_level": 2,
     "_components": [
       {
-        "__id__": 72
+        "__id__": 73
       }
     ],
     "_prefab": null,
@@ -1869,14 +1869,14 @@
     "_id": "eenWSRqNVNgooXj5H+XhuZ"
   },
   {
-    "__type__": "5efa9MRs05G661FPrAgkcTu",
+    "__type__": "2508cUN5Y1PmI7KRcj7XkfR",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 25
     },
     "_enabled": true,
-    "_id": "69SJ7VYptIqZ2w+ZNz3ITS"
+    "_id": "f5056focdHxb0vqxHgMaHg"
   },
   {
     "__type__": "cc.Node",
@@ -1890,9 +1890,13 @@
         "__id__": 46
       }
     ],
-    "_active": true,
+    "_active": false,
     "_level": 3,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 72
+      }
+    ],
     "_prefab": null,
     "_opacity": 255,
     "_color": {
@@ -2100,7 +2104,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "CurScore",
+    "_name": "Label CurScore",
     "_objFlags": 0,
     "_parent": {
       "__id__": 46
@@ -2162,7 +2166,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Label copy",
+    "_name": "CurScore",
     "_objFlags": 0,
     "_parent": {
       "__id__": 49
@@ -2280,7 +2284,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "BestScore",
+    "_name": "Label BestScore",
     "_objFlags": 0,
     "_parent": {
       "__id__": 46
@@ -2342,7 +2346,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Label",
+    "_name": "BestScore",
     "_objFlags": 0,
     "_parent": {
       "__id__": 53
@@ -3185,6 +3189,24 @@
     "_isTrimmedMode": true,
     "_atlas": null,
     "_id": "bbgA0Hj+dDZ5pl3I+ijj2D"
+  },
+  {
+    "__type__": "77429i13dNIIJkunKh2R8oj",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 45
+    },
+    "_enabled": true,
+    "curScore": {
+      "__id__": 51
+    },
+    "bestScore": {
+      "__id__": 55
+    },
+    "score": 0,
+    "_bestScore": 0,
+    "_id": "9akdFOkZtAmrN79QEZEGQV"
   },
   {
     "__type__": "37704gF9WFHWpuA4THgcmPy",
