@@ -40,6 +40,7 @@ cc.Class({
 
     returnHome() {
         _singleTon._instance.flag = false;
+        _singleTon._instance.score = 0;
         let scene = cc.director.getScene(this.Scene);
         cc.director.loadScene(scene.name)
     }

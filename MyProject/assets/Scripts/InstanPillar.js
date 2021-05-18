@@ -11,7 +11,7 @@ cc.Class({
       serializable : false,
     },
     randomPositionY : {
-      default : 180,
+      default : 200,
       serializable : false,
     },
     distanceX : {
@@ -19,7 +19,7 @@ cc.Class({
       serializable : false,
     },
     spacePillar : {
-      default : 90,
+      default : 80,
       serializable : false,
     },
     _checkFlag : true,
